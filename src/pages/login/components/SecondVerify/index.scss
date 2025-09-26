@@ -1,0 +1,15 @@
+.verify-modal {
+  .form {
+    margin-top: 30px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+
+    .ant-btn + .ant-btn {
+      margin-left: 16px;
+    }
+  }
+}

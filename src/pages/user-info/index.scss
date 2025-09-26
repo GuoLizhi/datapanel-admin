@@ -1,0 +1,35 @@
+.user-info-page {
+  .title {
+    overflow: hidden;
+    color: rgba(0,0,0,.85);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5715;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+  }
+
+  .ant-col {
+    color: rgba(0,0,0,.85);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5715;
+    text-align: start;
+    margin-bottom: 16px;
+
+    .detail {
+      margin-left: 12px;
+    }
+  }
+  // .pushdeer-key-form {
+  //   margin-top: 32px;
+  //   width: 490px;
+  //   .ant-form-item {
+  //     margin-bottom: 18px;
+  //   }
+  //   .pushdeer-key-btn {
+  //     margin-top: -28px;
+  //   }
+  // }
+}

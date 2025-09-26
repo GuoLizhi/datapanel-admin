@@ -1,0 +1,114 @@
+{
+  "id": "4513854",
+  "name": "beastadmin项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7762174",
+      "name": "重启",
+      "font_class": "ziyuanxhdpi",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "11638001",
+      "name": "余额不足",
+      "font_class": "yuebuzu",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "39780132",
+      "name": "余额不足-提醒",
+      "font_class": "yuebuzu-tixing",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "6321372",
+      "name": "余额不足",
+      "font_class": "zhihuidoubuzu",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "6993739",
+      "name": "pending",
+      "font_class": "pending1",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "10018015",
+      "name": "pending",
+      "font_class": "dengdaiicon",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "766690",
+      "name": "fail",
+      "font_class": "shibai",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "1530822",
+      "name": "pending",
+      "font_class": "pending",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "15838502",
+      "name": "loading",
+      "font_class": "loading1",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
+      "icon_id": "21823918",
+      "name": "success",
+      "font_class": "success",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "11891846",
+      "name": "refresh",
+      "font_class": "refresh",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "245719",
+      "name": "update",
+      "font_class": "update",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "1305488",
+      "name": "loading",
+      "font_class": "loading",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "5809118",
+      "name": "流程重启",
+      "font_class": "liuchengzhongqi",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "13638731",
+      "name": "刷新",
+      "font_class": "shuaxin",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+.users-list-page {
+
+  .ant-table-cell {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+  }
+
+  .user-table {
+    .red {
+      color: red;
+    }
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: red;
+  }
+
+  .table-panel {
+    display: flex;
+  }
+}

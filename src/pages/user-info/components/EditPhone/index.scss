@@ -1,0 +1,13 @@
+.edit-phone-modal {
+  .footer {
+    display: flex;
+    justify-content: end;
+    .ant-btn + .ant-btn {
+      margin-left: 20px;
+    }
+  }
+
+  .ant-input-group.ant-input-group-compact {
+    display: flex;
+  }
+}

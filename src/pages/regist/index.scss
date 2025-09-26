@@ -1,0 +1,28 @@
+.regist-page {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../../assets/images/login-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center 110px;
+  background-size: 100%;
+  background-color: #f0f2f5;
+  overflow: hidden;
+
+  > .title {
+    color: rgba(0,0,0,.85);
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .regist-form {
+    width: 328px;
+    margin: 24px auto;
+
+    .regist-btn {
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+  }
+}

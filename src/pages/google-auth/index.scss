@@ -1,0 +1,39 @@
+.google-auth-page {
+  .step-container {
+    display: flex;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+  }
+
+  .unbind-form {
+    width: 480px;
+    margin-top: 24px;
+  }
+
+  .img-wrapper {
+    width: 150px;
+    height: 150px;
+    margin-left: 120px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .step {
+    .red {
+      color: red;
+    }
+  }
+
+  .step + .step {
+    margin-top: 16px;
+  }
+
+  .bind-form {
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,28 @@
+.pairs-setting-modal {
+  width: 520px;
+  .ant-modal-header {
+    margin-bottom: 20px;
+  }
+
+  .ant-modal-content {
+    width: 520px;
+  }
+  .footer {
+    display: flex;
+    justify-content: end;
+  
+    .ant-btn + .ant-btn {
+      margin-left: 16px;
+    }
+  }
+  .params-checkbox {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &.ant-checkbox-group {
+      .ant-checkbox-wrapper {
+        width: 31%;
+      }
+    }
+  }
+}

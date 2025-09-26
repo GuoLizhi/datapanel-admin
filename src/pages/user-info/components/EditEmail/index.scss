@@ -1,0 +1,9 @@
+.edit-email-modal {
+  .footer {
+    display: flex;
+    justify-content: end;
+    .ant-btn + .ant-btn {
+      margin-left: 20px;
+    }
+  }
+}

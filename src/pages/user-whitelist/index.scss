@@ -1,0 +1,25 @@
+.user-whitelist-page {
+  .whitelist-table {
+    margin-top: 24px;
+  }
+
+  .table-panel {
+    display: flex;
+  }
+}
+
+.add-whitelist-modal {
+  .form {
+    margin-top: 30px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+
+    .ant-btn + .ant-btn {
+      margin-left: 16px;
+    }
+  }
+}
