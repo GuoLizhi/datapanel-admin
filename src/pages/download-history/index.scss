@@ -1,0 +1,23 @@
+.apply-list-page {
+  box-sizing: border-box;
+  .apply-list {
+    width: 100%;
+    box-sizing: border-box;
+    .apply-list-table {
+      margin-top: 12px;
+      width: calc(100vw - 200px - 48px - 50px);
+    }
+  }
+
+  .apply-filter-form {
+    .form-item {
+      width: 190px;
+    }
+    .ant-form-item {
+      margin-bottom: 12px;
+    }
+    .ant-form-item-control {
+      width: 150px;
+    }
+  }
+}

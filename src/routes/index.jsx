@@ -10,6 +10,9 @@ import GoogleAuth from '../pages/google-auth'
 import ChatGPT from '@/pages/chatgpt'
 import UsersList from '@/pages/users-list'
 import UserWhitelist from '@/pages/user-whitelist'
+import FileLists from '@/pages/files-list'
+import ApplyList from '@/pages/apply-list'
+import DownloadHistory from '@/pages/download-history'
 
 const App = () => {
   const { isLogined } = useSelector(state => state.global)
@@ -44,6 +47,9 @@ const App = () => {
                 <Route path="" element={<Navigate to="users-list" />} />
                 <Route path="users-list" element={<UsersList />} />
                 <Route path="whitelist" element={<UserWhitelist />} />
+                <Route path="files-list" element={<FileLists />} />
+                <Route path="apply-list" element={<ApplyList />} />
+                <Route path="download-history" element={<DownloadHistory />} />
               </Route>}
             </Route>
             <Route path="/login" element={<Login />}></Route>

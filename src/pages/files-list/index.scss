@@ -1,0 +1,23 @@
+.files-page {
+  box-sizing: border-box;
+  .files-list {
+    width: 100%;
+    box-sizing: border-box;
+    .files-list-table {
+      margin-top: 12px;
+      width: calc(100vw - 200px - 48px - 50px);
+    }
+  }
+
+  .files-filter-form {
+    .form-item {
+      width: 180px;
+    }
+    .ant-form-item {
+      margin-bottom: 12px;
+    }
+    .ant-form-item-control {
+      width: 150px;
+    }
+  }
+}

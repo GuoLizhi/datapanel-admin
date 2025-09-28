@@ -50,10 +50,14 @@ export const uploadKybFile = '/api/v1/kyb/upload'
 export const submitKybInfo = '/api/v1/kyb/add'
 
 // 通知模块
-export const getMenuConfig = '/api/v1/menu/list'
+// export const getMenuConfig = '/api/v1/menu/list'
 
 // 管理员模块
 export const chatGPT = '/api/v1/chatgpt'
 
-// 前端监控上报
-export const submitErrorToDingTalk = '/api/v1/notice/dingding'
+// 文件模块
+export const getFileList = '/api/v1/file/list'
+export const downloadHistoryList = '/api/v1/file/download/history'
+
+// 申请模块
+export const getApplyList = '/api/v1/apply/list'

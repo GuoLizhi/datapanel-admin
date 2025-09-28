@@ -2,6 +2,7 @@ import { message } from 'antd'
 import axios from 'axios'
 
 axios.defaults.baseURL = process.env.NODE_ENV === 'development' ? 'http://35.72.73.146' : ''
+// axios.defaults.baseURL = process.env.NODE_ENV === 'development' ? 'http://datapanel.dev' : ''
 
 // 请求拦截器
 axios.interceptors.request.use((config) => {

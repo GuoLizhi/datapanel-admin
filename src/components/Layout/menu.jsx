@@ -10,6 +10,18 @@ export const menuConfig = [
     // role: [],
     children: [
       {
+        key: '/admin/files-list',
+        label: '文件列表'
+      },
+      {
+        key: '/admin/apply-list',
+        label: '申请列表'
+      },
+      {
+        key: '/admin/download-history',
+        label: '下载历史'
+      },
+      {
         key: '/admin/users-list',
         label: '用户列表'
       },
