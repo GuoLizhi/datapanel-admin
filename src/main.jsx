@@ -9,9 +9,6 @@ import '@/assets/styles/iconfont.css'
 import store from './store/index'
 import App from './routes'
 
-window.global ||= window
-document.title = location.host === '120.79.244.183' ? 'hf' : location.host?.split('.')?.shift()
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div>
     <Provider store={store}>

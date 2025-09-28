@@ -49,18 +49,20 @@ const Login = () => {
   }
   return (
     <div className="login-page">
-      <h2 className="title">{import.meta.env.MODE === 'inner' ? '量化交易管理后台' : '量化交易管理后台'}</h2>
-      <p className="sec-title">打造具有影响力的量化交易平台</p>
+      <h2 className="title">datapanel.dev管理后台</h2>
+      <p className="sec-title">打造具有影响力的管理平台</p>
       <Form
         form={form}
         layout="horizontal"
         className="form"
         onFinish={login}
-        labelCol={{ span: 5 }}>
+        labelCol={{ span: 5 }}
+      >
         <Form.Item name="email" rules={[
           { required: true, message: '邮箱不能为空' },
           { pattern: /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/, message: '邮箱格式不正确' }
-        ]}>
+        ]}
+        >
           <Input
             placeholder="请输入邮箱"
             prefix={<MailOutlined />}
@@ -69,7 +71,8 @@ const Login = () => {
         </Form.Item>
         <Form.Item name="password" rules={[
           { required: true, message: '密码不能为空' }
-        ]}>
+        ]}
+        >
           <Input.Password
             placeholder="请输入密码"
             prefix={<LockOutlined />}
@@ -87,7 +90,8 @@ const Login = () => {
           type="primary"
           htmlType="submit"
           loading={verifyUserLoading}
-          block>
+          block
+        >
           登录
         </Button>
         <Button type="link" onClick={goRegist} block className="regist">还没有账号？立即注册</Button>

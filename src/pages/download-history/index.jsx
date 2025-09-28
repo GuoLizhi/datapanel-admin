@@ -9,7 +9,7 @@ import { downloadHistoryListService } from '@/service/file'
 import { useRequest } from 'ahooks'
 import {
   Button, Table, Form,
-  Input, Tag
+  Input, Tag, Tooltip
 } from 'antd'
 
 import './index.scss'
@@ -36,10 +36,23 @@ const DownloadHistory = () => {
       fixed: 'left'
     },
     {
+      title: '交易所',
+      dataIndex: 'Exchange',
+      align: 'center',
+      key: 'Exchange'
+    },
+    {
       title: 'ApiKey',
       dataIndex: 'ApiKey',
       align: 'center',
-      key: 'ApiKey'
+      key: 'ApiKey',
+      render: (val) => {
+        return (
+          <Tooltip title={val}>
+            <span>{val?.slice(0, 8)}</span>
+          </Tooltip>
+        )
+      }
     },
     {
       title: '币种',
@@ -59,28 +72,25 @@ const DownloadHistory = () => {
       key: 'DataType'
     },
     {
-      title: '开始时间',
-      dataIndex: 'StartDate',
-      align: 'center',
-      key: 'StartDate',
-      render: (val) => {
-        return val ? dayjs.utc(val, 'YYYY-MM-DD HH:mm:ss').local().format('YYYY-MM-DD HH:mm:ss') : ''
-      }
-    },
-    {
-      title: '结束时间',
-      dataIndex: 'EndDate',
-      align: 'center',
-      key: 'EndDate',
-      render: (val) => {
-        return val ? dayjs.utc(val, 'YYYY-MM-DD HH:mm:ss').local().format('YYYY-MM-DD HH:mm:ss') : ''
-      }
-    },
-    {
-      title: '文件大小',
+      title: '文件大小(MB)',
       dataIndex: 'TotalSize',
       align: 'center',
-      key: 'TotalSize'
+      key: 'TotalSize',
+      render: (val) => {
+        return `${(val / (1024 * 1024))?.toFixed(2)}MB`
+      }
+    },
+    {
+      title: '下载时间范围-起始时间',
+      dataIndex: 'StartDate',
+      align: 'center',
+      key: 'StartDate'
+    },
+    {
+      title: '下载时间范围-结束时间',
+      dataIndex: 'EndDate',
+      align: 'center',
+      key: 'EndDate'
     }
   ]
 

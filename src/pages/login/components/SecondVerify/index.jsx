@@ -52,7 +52,7 @@ const SecondVerify = ({ visible, toggle, hasGoogleVerify, email, verifyKey }) =>
       if (redirect) {
         location.href = decodeURIComponent(redirect)
       } else {
-        navigate('/account/user-info')
+        navigate('/assets/files-list')
       }
     }
   })
@@ -106,16 +106,19 @@ const SecondVerify = ({ visible, toggle, hasGoogleVerify, email, verifyKey }) =>
       footer={null}
       onCancel={onClose}
       maskClosable={false}
-      open={visible}>
+      open={visible}
+    >
       <Form
         className="form"
         labelCol={{ span: 6 }}
         form={form}
         initialValues={{ validateType: 'email' }}
-        onFinish={onSubmit}>
+        onFinish={onSubmit}
+      >
         {hasGoogleVerify && <Form.Item label="验证码类型" name="validateType" rules={[
           { required: true, message: '验证码类型不能为空' }
-        ]}>
+        ]}
+        >
           <Radio.Group onChange={handleValidateTypeChange} value={validateType}>
             <Radio.Button value="email">邮箱验证码</Radio.Button>
             <Radio.Button value="google">谷歌验证码</Radio.Button>
@@ -124,7 +127,8 @@ const SecondVerify = ({ visible, toggle, hasGoogleVerify, email, verifyKey }) =>
         {validateType === 'email' && <Form.Item label="邮箱验证码" required>
           <Form.Item noStyle name="emailCode" rules={[
             { required: true, message: '邮箱验证码不能为空' }
-          ]}>
+          ]}
+          >
             <Input.Search placeholder="请输入邮箱验证码"
               size="large"
               allowClear
@@ -133,7 +137,8 @@ const SecondVerify = ({ visible, toggle, hasGoogleVerify, email, verifyKey }) =>
                 <Button
                   loading={sendVerifyCodeLoading}
                   disabled={remain > 0 && remain < countDownInit}
-                  onClick={onSendVerifyCode}>
+                  onClick={onSendVerifyCode}
+                >
                   {sendBtnText}
                 </Button>
               }
@@ -143,8 +148,9 @@ const SecondVerify = ({ visible, toggle, hasGoogleVerify, email, verifyKey }) =>
         {
           hasGoogleVerify && validateType === 'google' && <Form.Item label="Google验证码" name="googleCode" rules={[
             { required: true, message: 'Google验证码不能为空' }
-          ]}>
-          <Input placeholder="请输入Google验证码" />
+          ]}
+          >
+            <Input placeholder="请输入Google验证码" />
           </Form.Item>
         }
         <div className="footer">
@@ -152,7 +158,8 @@ const SecondVerify = ({ visible, toggle, hasGoogleVerify, email, verifyKey }) =>
           <Button
             type="primary"
             htmlType="submit"
-            loading={loginLoading}>
+            loading={loginLoading}
+          >
             确定
           </Button>
         </div>

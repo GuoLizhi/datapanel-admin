@@ -37,19 +37,23 @@ const App = () => {
         <Suspense fallback={<Layout />}>
           <Routes>
             <Route exact path="/" element={<Layout />}>
+              <Route path="" element={<Navigate to="/assets/files-list" />} />
               <Route path="account">
                 <Route path="" element={<Navigate to="user-info" />} />
                 <Route path="google-auth" element={<GoogleAuth />} />
                 <Route path="user-info" element={<UserInfo />} />
                 <Route path="chatgpt" element={<ChatGPT />} />
               </Route>
+              {<Route path="assets">
+                <Route path="" element={<Navigate to="files-list" />} />
+                <Route path="files-list" element={<FileLists />} />
+                <Route path="apply-list" element={<ApplyList />} />
+                <Route path="download-history" element={<DownloadHistory />} />
+              </Route>}
               {<Route path="admin">
                 <Route path="" element={<Navigate to="users-list" />} />
                 <Route path="users-list" element={<UsersList />} />
                 <Route path="whitelist" element={<UserWhitelist />} />
-                <Route path="files-list" element={<FileLists />} />
-                <Route path="apply-list" element={<ApplyList />} />
-                <Route path="download-history" element={<DownloadHistory />} />
               </Route>}
             </Route>
             <Route path="/login" element={<Login />}></Route>

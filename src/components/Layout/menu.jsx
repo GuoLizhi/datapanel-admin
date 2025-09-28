@@ -4,23 +4,31 @@ import { AccountBookOutlined, GoldOutlined, LineChartOutlined, MacCommandOutline
 
 export const menuConfig = [
   {
-    key: 'admin',
-    label: '管理员',
+    key: 'assets',
+    label: '资源列表',
     icon: 'GoldOutlined',
     // role: [],
     children: [
       {
-        key: '/admin/files-list',
+        key: '/assets/files-list',
         label: '文件列表'
       },
       {
-        key: '/admin/apply-list',
+        key: '/assets/apply-list',
         label: '申请列表'
       },
       {
-        key: '/admin/download-history',
+        key: '/assets/download-history',
         label: '下载历史'
-      },
+      }
+    ]
+  },
+  {
+    key: 'admin',
+    label: '用户管理',
+    icon: 'GoldOutlined',
+    // role: [],
+    children: [
       {
         key: '/admin/users-list',
         label: '用户列表'

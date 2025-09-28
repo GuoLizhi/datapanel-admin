@@ -56,10 +56,13 @@ const FileLists = () => {
       key: 'Symbol'
     },
     {
-      title: '文件大小',
+      title: '文件大小(MB)',
       dataIndex: 'FileSize',
       align: 'center',
-      key: 'FileSize'
+      key: 'FileSize',
+      render: (val) => {
+        return `${(val / (1024 * 1024))?.toFixed(2)}MB`
+      }
     },
     {
       title: '文件类型',
@@ -79,26 +82,6 @@ const FileLists = () => {
       align: 'center',
       key: 'Filename'
     },
-    // {
-    //   title: '公告链接',
-    //   dataIndex: 'link',
-    //   align: 'center',
-    //   key: 'link',
-    //   width: 420,
-    //   render: (val) => {
-    //     return val
-    //       ? (
-    //         <a
-    //           type='link'
-    //           className='news-link'
-    //           onClick={() => handleLinkClick(val)}
-    //         >
-    //           {decodeURIComponent(val)}
-    //         </a>
-    //         )
-    //       : null
-    //   }
-    // },
     {
       title: '上传时间',
       dataIndex: 'CreatedAt',

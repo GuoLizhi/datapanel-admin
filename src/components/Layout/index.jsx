@@ -20,8 +20,8 @@ import {
 } from '@/store/global'
 import { parseUserInfo } from '@/common/userInfo'
 import dayjs from 'dayjs'
-import { judgeUrl } from './utils'
-import { NO_NEED_JUDGE_URL } from './constant'
+// import { judgeUrl } from './utils'
+// import { NO_NEED_JUDGE_URL } from './constant'
 
 const { Header, Sider } = Layout
 
@@ -56,16 +56,18 @@ const BasicLayout = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [menuConfig])
 
-  useEffect(() => {
-    if (menus?.length > 0) {
-      const url = location.pathname
-      const user = parseUserInfo()
-      if (!judgeUrl(menus, url, user?.role) && !(NO_NEED_JUDGE_URL.includes(url))) {
-        navigate(menus[0]?.children[0]?.key)
-      }
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [menus])
+  // useEffect(() => {
+  //   if (menus?.length > 0) {
+  //     const url = location.pathname
+  //     const user = parseUserInfo()
+  //     if (
+  //       !judgeUrl(menus, url, user?.role) &&
+  //       !(NO_NEED_JUDGE_URL.includes(url))) {
+  //       navigate(menus[0]?.children[0]?.key)
+  //     }
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [menus])
 
   useEffect(() => {
     getUserInfo()
@@ -158,7 +160,7 @@ const BasicLayout = () => {
   return (
     <Layout className="basic-layout">
       <Header className="header">
-        <p className="title">量化交易管理后台</p>
+        <p className="title">datapanel.dev</p>
         <div className="info-wrapper">
           {isInner && <span className="chatgpt" onClick={goChatGPT}>ChatGPT</span>}
           {/* <Badge count={unreadNoticeCnt} className="warning-badge" onClick={goNotifyPage}>
