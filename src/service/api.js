@@ -1,63 +1,63 @@
-export const login = '/api/v1/user/loginVerify'
+export const login = '/api/admin/user/loginVerify'
 
-export const resetPwd = '/api/v1/user/reset/password'
+export const resetPwd = '/api/admin/user/reset/password'
 
-export const regist = '/api/v1/user/register'
+export const regist = '/api/admin/user/register'
 
-export const sendVerifyCode = '/api/v1/user/sendEmail'
+export const sendVerifyCode = '/api/admin/user/sendEmail'
 
-export const sendResetVerifyCode = '/api/v1/user/sendEmail'
+export const sendResetVerifyCode = '/api/admin/user/sendEmail'
 
-export const sendAuthedVerifyCode = '/api/v1/user/auth/sendEmail'
+export const sendAuthedVerifyCode = '/api/admin/user/auth/sendEmail'
 
 // 用户模块
-export const updateUserRole = '/api/v1/user/role/update'
+export const updateUserRole = '/api/admin/user/role/update'
 
-export const getAllUsers = '/api/v1/user/getAll'
+export const getAllUsers = '/api/admin/user/getAll'
 
-export const verifyUser = '/api/v1/user/login'
+export const verifyUser = '/api/admin/user/login'
 
-export const getUserInfo = '/api/v1/user/getUserInfo'
+export const getUserInfo = '/api/admin/user/getUserInfo'
 
-export const updatePushDeerKey = '/api/v1/user/updatePushDeerKey'
+export const updatePushDeerKey = '/api/admin/user/updatePushDeerKey'
 
-export const updateNickname = '/api/v1/user/updateNickname'
+export const updateNickname = '/api/admin/user/updateNickname'
 
-export const updateEmail = '/api/v1/user/updateEmail'
+export const updateEmail = '/api/admin/user/updateEmail'
 
-export const updatePhone = '/api/v1/user/updatePhone'
+export const updatePhone = '/api/admin/user/updatePhone'
 
-export const updatePwd = '/api/v1/user/updatePassword'
+export const updatePwd = '/api/admin/user/updatePassword'
 
-export const getGoogleAuthStatus = '/api/v1/user/getGoogleAuthStatus'
+export const getGoogleAuthStatus = '/api/admin/user/getGoogleAuthStatus'
 
-export const bindGooleAuth = '/api/v1/user/bindGoogleAuth'
+export const bindGooleAuth = '/api/admin/user/bindGoogleAuth'
 
-export const unbindGoogleAuth = '/api/v1/user/unbindGoogleAuth'
+export const unbindGoogleAuth = '/api/admin/user/unbindGoogleAuth'
 
-export const getUserById = '/api/v1/user/getUserById'
+export const getUserById = '/api/admin/user/getUserById'
 
-export const getAllWhiteList = '/api/v1/user/whitelist/all'
+export const getAllWhiteList = '/api/admin/user/whitelist/all'
 
-export const addWhiteListUser = '/api/v1/user/whitelist/add'
+export const addWhiteListUser = '/api/admin/user/whitelist/add'
 
-export const delWhiteListUser = '/api/v1/user/whitelist/remove'
+export const delWhiteListUser = '/api/admin/user/whitelist/remove'
 
-export const getUserKybStatus = '/api/v1/kyb/status'
+export const getUserKybStatus = '/api/admin/kyb/status'
 
-export const uploadKybFile = '/api/v1/kyb/upload'
+export const uploadKybFile = '/api/admin/kyb/upload'
 
-export const submitKybInfo = '/api/v1/kyb/add'
+export const submitKybInfo = '/api/admin/kyb/add'
 
 // 通知模块
-// export const getMenuConfig = '/api/v1/menu/list'
+// export const getMenuConfig = '/api/admin/menu/list'
 
 // 管理员模块
-export const chatGPT = '/api/v1/chatgpt'
+export const chatGPT = '/api/admin/chatgpt'
 
 // 文件模块
-export const getFileList = '/api/v1/file/list'
-export const downloadHistoryList = '/api/v1/file/download/history'
+export const getFileList = '/api/admin/file/list'
+export const downloadHistoryList = '/api/admin/file/download/history'
 
 // 申请模块
-export const getApplyList = '/api/v1/apply/list'
+export const getApplyList = '/api/admin/apply/list'
